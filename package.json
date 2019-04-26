@@ -1,0 +1,43 @@
+{
+  "name": "kycapplication",
+  "version": "1.0.0",
+  "main": "server/server.js",
+  "engines": {
+    "node": ">=6"
+  },
+  "scripts": {
+    "build": "lb-tsc es2017 --outDir dist",
+    "clean": "lb-clean dist",
+    "prestart": "npm run build",
+    "start": "node ."
+  },
+  "dependencies": {
+    "@loopback/authentication": "^1.2.0",
+    "@loopback/boot": "^1.2.2",
+    "@loopback/rest": "^1.10.3",
+    "@loopback/rest-explorer": "^1.1.17",
+    "@loopback/testlab": "^1.2.5",
+    "compression": "^1.0.3",
+    "cors": "^2.5.2",
+    "express-middleware": "^3.4.0",
+    "helmet": "^3.10.0",
+    "jsonwebtoken": "^8.5.1",
+    "loopback": "^3.22.0",
+    "loopback-boot": "^2.6.5",
+    "loopback-component-explorer": "^6.2.0",
+    "loopback-connector-mongodb": "^4.1.0",
+    "passport-http": "^0.3.0",
+    "serve-favicon": "^2.0.1",
+    "strong-error-handler": "^3.0.0"
+  },
+  "repository": {
+    "type": "",
+    "url": ""
+  },
+  "license": "UNLICENSED",
+  "description": "KYCApplication",
+  "devDependencies": {
+    "@loopback/build": "^1.5.0"
+  },
+  "author": ""
+}
